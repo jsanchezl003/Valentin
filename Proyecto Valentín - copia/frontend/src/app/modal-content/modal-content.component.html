@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>{{ data.title }}</h2>
+<mat-dialog-content>
+  <!-- Add an image -->
+  <img [src]="data.urlCover" alt="{{ data.title }} Image" style="max-width: 200px; width: 100%; height: auto;">
+  
+  <!-- Description -->
+  <p><strong>Director:</strong> {{ data.director }}</p>
+  <p><strong>Género:</strong> {{ data.genre }}</p>
+  <p><strong>Año de estreno:</strong> {{ data.releaseYear }}</p>
+  <p><strong>Descripción:</strong> {{ data.description }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

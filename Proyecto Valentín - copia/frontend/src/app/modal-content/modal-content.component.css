@@ -1,0 +1,29 @@
+/* styles.css (o tu archivo de estilos CSS correspondiente) */
+
+/* Aumentar el espacio alrededor del modal */
+.mat-dialog-container {
+    padding: 24px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column; /* Alinea los elementos en una columna */
+  }
+  
+  /* Aumentar el espacio entre los elementos del contenido del modal */
+  .mat-dialog-content {
+    margin-bottom: 16px; /* Añade espacio debajo del contenido */
+    text-align: center; /* Centra el texto */
+  }
+  
+  /* Estilo adicional para la imagen */
+  .mat-dialog-content img {
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-bottom: 16px; /* Añade espacio debajo de la imagen */
+  }
+  
+  /* Estilo para los datos precedidos por texto en negrita */
+  .mat-dialog-content p strong {
+    font-weight: bold;
+    margin-right: 8px; /* Añade un margen a la derecha del texto en negrita */
+  }
+  

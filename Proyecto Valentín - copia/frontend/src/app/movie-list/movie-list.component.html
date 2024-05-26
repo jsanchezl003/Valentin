@@ -1,0 +1,33 @@
+<div>
+  <mat-form-field appearance="fill">
+    <mat-label>Search movies</mat-label>
+    <input matInput [(ngModel)]="searchQuery" (input)="searchMovies()" placeholder="Search movies">
+  </mat-form-field>
+</div>
+
+<div *ngFor="let movie of filteredMovies">
+  <h3>{{ movie.title }}</h3>
+  <p>{{ movie.description }}</p>
+  <button mat-button (click)="openDialog(movie)">View Details</button>
+</div>
+
+
+
+
+<div>
+  <h2>Lista de Películas</h2>
+  <div class="movie-container">
+    <div *ngFor="let movie of movies" class="movie-card">
+      <img [src]="movie.urlCover" alt="{{ movie.title }}" class="movie-image" (click)="openDialog(movie)">
+      <div class="movie-details">
+        <h3>{{ movie.title }}</h3>
+        <p><strong>Director:</strong> {{ movie.director }}</p>
+        <p><strong>Género:</strong> {{ movie.genre }}</p>
+        <p><strong>Año de lanzamiento:</strong> {{ movie.releaseYear }}</p>
+        <p>{{ movie.description }}</p>
+        <button (click)="addToQueue(movie)" class="add-to-playlist-button">Agregar a la lista de reproducción</button>
+      </div>
+    </div>
+  </div>
+</div>
+

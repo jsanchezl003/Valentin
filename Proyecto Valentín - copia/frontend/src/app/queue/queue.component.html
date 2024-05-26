@@ -1,0 +1,7 @@
+<div>
+  <h2>Cola de Reproducción</h2>
+  <div *ngFor="let movie of queue" class="queue-item">
+    <p>{{ movie.title }}</p>
+    <button (click)="removeFromQueue(movie)">Quitar de la cola</button>
+  </div>
+</div>
